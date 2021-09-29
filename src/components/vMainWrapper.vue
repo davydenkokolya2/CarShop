@@ -6,10 +6,14 @@
 
 <script>
 import vCatalog from './vCatalog'
+import vCart from './vCart'
 
 export default ({
     name: "vMainWrapper",
-    components: {vCatalog},
+    components: {
+        vCatalog,
+        vCart
+        },
     props: {},
     data() {
         return {
