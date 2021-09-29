@@ -1,7 +1,10 @@
 <template>
     <div class="vMainWrapper">
         <p>{{title}}</p>
+        <vCatalog></vCatalog>
+        <vCart/>
     </div>
+    
 </template>
 
 <script>
@@ -32,6 +35,7 @@ export default ({
 <style>
     .vMainWrapper {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: 900px;

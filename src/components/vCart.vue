@@ -1,9 +1,9 @@
 <template>
-    
+    <div></div>
 </template>
 <script>
 export default {
-    name: 'vCard',
+    name: 'vCart',
 }
 </script>
 <style scoped>
