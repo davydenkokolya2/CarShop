@@ -5,10 +5,11 @@
 </template>
 
 <script>
+import vCatalog from './vCatalog'
 
 export default ({
     name: "vMainWrapper",
-    components: {},
+    components: {vCatalog},
     props: {},
     data() {
         return {
