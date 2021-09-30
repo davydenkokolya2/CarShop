@@ -14,4 +14,11 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style>
+    .vCatalog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
