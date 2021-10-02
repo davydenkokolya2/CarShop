@@ -1,17 +1,26 @@
 <template>
   <div class="vCatalogItem">
     <img src="" alt="" />
-    <p>Item 1</p>
-    <p>Price: 100</p>
-    <button>Add to Cart</button>
+    <p class="vCatalogItemName">{{product_data.name}}</p>
+    <p class="vCatalogItemPrice">{{product_data.price}}</p>
+    <button class="vCatalogItemAddToCartBtn btn">Add to Cart</button>
   </div>
 </template>
 <script>
 export default {
   name: "vCatalogItem",
+  props: {
+    product_data: {
+      type: Object,
+      default() {
+        return {};
+      },
+    },
+  },
 };
 </script>
 <style>
+
 .vCatalogItem {
   flex-basis: 25%;
   box-shadow: 0 0 8px 0;
