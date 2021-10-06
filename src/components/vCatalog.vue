@@ -7,6 +7,7 @@
         :key="product.article"
         v-bind:product_data="product"
         @sendArticle="showChildArticlesConsole"
+        @addToCart="addToCart"
       >
       </vCatalogItem>
     </div>
@@ -33,10 +34,11 @@ export default {
   },
   methods: {
     ...mapActions([
-      'GET_PRODUCTS_FROM_API'
+      'GET_PRODUCTS_FROM_API',
+      'ADD_TO_CART'
     ]),
-    showChildArticlesConsole(data){
-      console.log(data)
+    addToCart(data){
+      this.ADD_TO_CART(data)
     }
   },
   mounted() {
