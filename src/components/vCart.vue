@@ -1,7 +1,11 @@
 <template>
   <div class="vCart">
       <h1>Корзина</h1>
-      <vCartItem/>
+      <vCartItem
+        v-for="item in cart_data"
+        :key="item.article"
+        :cart_item_data="item"
+      />
   </div>
 </template>
 <script>
@@ -13,6 +17,14 @@ export default {
     components: {
         vCartItem,
         
+    },
+    props: {
+        cart_data: {
+            type: Array,
+            default() {
+                return [];
+            }
+        }
     }
 }
 </script>
