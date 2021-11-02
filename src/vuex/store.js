@@ -21,10 +21,10 @@ export default createStore({
                     }
                 })
                 if (!isProductExist) {
-                    state.cart.push(product)
+                    state.cart.push({ ...product, quantity: 1 })
                 }
             } else {
-                state.cart.push(product)
+                state.cart.push({ ...product, quantity: 1 })
             }
         },
         REMOVE_FROM_CART: (state, index) => {

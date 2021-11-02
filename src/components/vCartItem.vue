@@ -23,6 +23,7 @@ export default {
   props: {
       cart_item_data: {
           type: Object,
+          
           default() {
             return {}
           }
@@ -34,7 +35,7 @@ export default {
     }
   },
   mounted() {
-    this.cart_item_data.quantity = 1;
+  
   }
 };
 </script>

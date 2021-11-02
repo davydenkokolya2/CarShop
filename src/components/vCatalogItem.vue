@@ -30,6 +30,9 @@ export default {
       this.$emit('addToCart', this.product_data)
     },
   },
+  mounted() {
+    
+  }
 };
 </script>
 <style lang="scss">
