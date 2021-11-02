@@ -12,7 +12,12 @@
     </div>
     <div class="vCartItem__quantity">
       <p>Quantity</p>
-      {{cart_item_data.quantity}}
+      <span>
+        <span>-</span>
+        {{cart_item_data.quantity}}
+        <span>+</span>
+      </span>
+      
     </div>
     <button @click="deleteFromCart">Delete</button>
   </div>
@@ -41,6 +46,7 @@ export default {
 </script>
 <style lang="scss">
 .vCartItem {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +55,7 @@ export default {
   padding: 16px;
   margin-bottom: 16px;
   &__Image{
-    max-width: 50px;
+    max-width: 30%;
   }
 }
 </style>

@@ -3,7 +3,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 // import VueRouter from 'vue-router'
 
 import vCatalog from '../components/vCatalog'
-import vCart from '../components/vCart.vue'
+import vCart from '../components/vCart'
 
 // Vue.use(VueRouter);
 
@@ -20,7 +20,7 @@ let router = createRouter({
             path: '/cart',
             name: 'cart',
             component: vCart,
-            props: true
+            props: true,
         }
     ]
 })
